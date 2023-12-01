@@ -374,4 +374,11 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+
+
+let findMember = (billDetail) => billDetail.member!= null;
+let memberInfo = bills.filter(findMember);
+console.log(memberInfo);
+const billMembers= memberInfo.map((detail)=>detail.member.name)
+console.log(billMembers);
+

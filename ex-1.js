@@ -374,3 +374,9 @@ const bills = [
 ];
 
 // Start coding here
+
+const totalTransactionCal=(accumulator,currentvalues)=>accumulator+currentvalues.total;
+const totalTransactionAmount = bills.reduce(totalTransactionCal,0);
+const sumOfTotalBillTransaction = `Total bill transaction is ${totalTransactionAmount}`;
+
+console.log(sumOfTotalBillTransaction);
